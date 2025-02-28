@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADFIT Services - Serrurier Île-de-France</title>
+    <meta name="description" content="ADFIT Services - Serrurier en Île-de-France disponible 24h/24 et 7j/7. Dépannage d'urgence, ouverture de portes, changement de serrures. Devis gratuit !">
+    <meta name="keywords" content="serrurier, dépannage serrurerie, ouverture de porte, changement de serrure, blindage de porte, urgence serrurier, Île-de-France">
+    <meta name="author" content="ADFIT Services">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,38 +16,58 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        header, footer {
-            background: #222;
+        header {
+            background: #007bff;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
+            position: relative;
+        }
+        header img {
+            width: 80px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
         .container {
             width: 90%;
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             background: white;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         .button {
             display: inline-block;
-            text-align: center;
             background: #007bff;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             text-decoration: none;
-            margin-top: 20px;
+            font-weight: bold;
             border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: url('https://img.icons8.com/ios-glyphs/30/007bff/checkmark.png') no-repeat left center;
+            padding-left: 40px;
+            margin: 10px 0;
+            font-size: 18px;
         }
         form {
             display: flex;
             flex-direction: column;
         }
         input, textarea {
-            margin: 5px 0;
-            padding: 10px;
+            margin: 8px 0;
+            padding: 12px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -52,7 +76,7 @@
             background: #007bff;
             color: white;
             border: none;
-            padding: 10px;
+            padding: 12px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
@@ -60,31 +84,105 @@
         button:hover {
             background: #0056b3;
         }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #f4f4f4;
+        }
+        /* Bouton WhatsApp flottant */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 50px;
+            font-size: 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp img {
+            width: 30px;
+            margin-right: 8px;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header img {
+                width: 60px;
+                top: 5px;
+                left: 5px;
+            }
+            .container {
+                padding: 15px;
+            }
+            .whatsapp {
+                font-size: 16px;
+                padding: 10px;
+            }
+            ul li {
+                padding-left: 30px;
+                font-size: 16px;
+            }
+        }
+        /* Bouton Appel Direct */
+        .call-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .call-button:hover {
+            background: #1e7e34;
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://via.placeholder.com/80" alt="Logo ADFIT">
         <h1>ADFIT Services - Serrurier 24/7</h1>
         <p>Intervention en Île-de-France en moins de 30 minutes</p>
     </header>
+
+    <!-- Bouton Appel Direct -->
+    <a href="tel:0652317539" class="call-button">📞 Appel direct</a>
     
     <div class="container">
         <h2>Nos Services</h2>
         <p>ADFIT Services vous propose un service de serrurerie rapide et efficace, disponible 24h/24 et 7j/7.</p>
         <ul>
-            <li>Ouverture de portes</li>
-            <li>Changement de serrures</li>
-            <li>Blindage de portes</li>
-            <li>Dépannage d'urgence</li>
-            <li>Sécurisation après cambriolage</li>
+            <li>🔑 Ouverture de portes</li>
+            <li>🔒 Changement de serrures</li>
+            <li>🚪 Blindage de portes</li>
+            <li>⚡ Dépannage d'urgence</li>
+            <li>🔐 Sécurisation après cambriolage</li>
         </ul>
-        <p><strong>Devis et facture gratuits</strong></p>
+        <p><strong>✅ Devis et facture gratuits</strong></p>
+    </div>
+    
+    <div class="container">
+        <h2>Ce que disent nos clients</h2>
+        <p>"Service rapide et efficace, serrurier très professionnel !" - <strong>Jean D.</strong></p>
+        <p>"Intervention en 20 minutes, prix honnête. Merci ADFIT !" - <strong>Sarah L.</strong></p>
     </div>
     
     <div class="container">
         <h2>Contact & Demande de Devis</h2>
         <p>Remplissez ce formulaire pour nous contacter ou demander un devis gratuit.</p>
-        <form id="contactForm">
+        <form action="https://formspree.io/f/ton_identifiant" method="POST">
             <input type="text" name="nom" placeholder="Votre nom" required>
             <input type="email" name="email" placeholder="Votre email" required>
             <input type="tel" name="telephone" placeholder="Votre téléphone" required>
@@ -94,22 +192,13 @@
     </div>
     
     <footer>
-        <p>Contact : <a href="tel:0652317539" style="color: white;">06.52.31.75.39</a> | 
-        <a href="mailto:adfitservices@gmail.com" style="color: white;">adfitservices@gmail.com</a></p>
-        <p><a href="https://www.pagesjaunes.fr/pros/63772553" target="_blank" style="color: white;">Retrouvez-nous sur Pages Jaunes</a></p>
+        <p>📞 <a href="tel:0652317539">06.52.31.75.39</a> | ✉️ <a href="mailto:adfitservices@gmail.com">adfitservices@gmail.com</a></p>
+        <p><a href="https://www.pagesjaunes.fr/pros/63772553" target="_blank">Retrouvez-nous sur Pages Jaunes</a></p>
     </footer>
-    
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            let formData = new FormData(this);
-            let mailtoLink = `mailto:adfitservices@gmail.com?subject=Demande de devis&body=
-                Nom: ${formData.get('nom')}%0D%0A
-                Email: ${formData.get('email')}%0D%0A
-                Téléphone: ${formData.get('telephone')}%0D%0A
-                Message: ${formData.get('message')}`;
-            window.location.href = mailtoLink;
-        });
-    </script>
+
+    <!-- Bouton WhatsApp -->
+    <a href="https://wa.me/33652317539" class="whatsapp" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp"> WhatsApp
+    </a>
 </body>
 </html>
