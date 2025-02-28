@@ -76,14 +76,15 @@
             <li>Changement de serrures</li>
             <li>Blindage de portes</li>
             <li>Dépannage d'urgence</li>
+            <li>Sécurisation après cambriolage</li>
         </ul>
-        <a href="contact.html" class="button">Demander un devis</a>
+        <p><strong>Devis et facture gratuits</strong></p>
     </div>
     
     <div class="container">
         <h2>Contact & Demande de Devis</h2>
         <p>Remplissez ce formulaire pour nous contacter ou demander un devis gratuit.</p>
-        <form action="mailto:adfitservices@gmail.com" method="post" enctype="text/plain">
+        <form id="contactForm">
             <input type="text" name="nom" placeholder="Votre nom" required>
             <input type="email" name="email" placeholder="Votre email" required>
             <input type="tel" name="telephone" placeholder="Votre téléphone" required>
@@ -95,6 +96,20 @@
     <footer>
         <p>Contact : <a href="tel:0652317539" style="color: white;">06.52.31.75.39</a> | 
         <a href="mailto:adfitservices@gmail.com" style="color: white;">adfitservices@gmail.com</a></p>
+        <p><a href="https://www.pagesjaunes.fr/pros/63772553" target="_blank" style="color: white;">Retrouvez-nous sur Pages Jaunes</a></p>
     </footer>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let formData = new FormData(this);
+            let mailtoLink = `mailto:adfitservices@gmail.com?subject=Demande de devis&body=
+                Nom: ${formData.get('nom')}%0D%0A
+                Email: ${formData.get('email')}%0D%0A
+                Téléphone: ${formData.get('telephone')}%0D%0A
+                Message: ${formData.get('message')}`;
+            window.location.href = mailtoLink;
+        });
+    </script>
 </body>
 </html>
