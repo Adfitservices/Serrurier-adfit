@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADFIT Services - Serrurier Île-de-France</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header, footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            text-align: center;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ADFIT Services - Serrurier 24/7</h1>
+        <p>Intervention en Île-de-France en moins de 30 minutes</p>
+    </header>
+    
+    <div class="container">
+        <h2>Nos Services</h2>
+        <p>ADFIT Services vous propose un service de serrurerie rapide et efficace, disponible 24h/24 et 7j/7.</p>
+        <ul>
+            <li>Ouverture de portes</li>
+            <li>Changement de serrures</li>
+            <li>Blindage de portes</li>
+            <li>Dépannage d'urgence</li>
+        </ul>
+        <a href="contact.html" class="button">Demander un devis</a>
+    </div>
+    
+    <div class="container">
+        <h2>Contact & Demande de Devis</h2>
+        <p>Remplissez ce formulaire pour nous contacter ou demander un devis gratuit.</p>
+        <form action="mailto:adfitservices@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <input type="tel" name="telephone" placeholder="Votre téléphone" required>
+            <textarea name="message" placeholder="Décrivez votre besoin" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>Contact : <a href="tel:0652317539" style="color: white;">06.52.31.75.39</a> | 
+        <a href="mailto:adfitservices@gmail.com" style="color: white;">adfitservices@gmail.com</a></p>
+    </footer>
+</body>
+</html>
