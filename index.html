@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADFIT Services - Serrurier Île-de-France</title>
-    <meta name="description" content="ADFIT Services - Serrurier en Île-de-France disponible 24h/24 et 7j/7. Dépannage d'urgence, ouverture de portes, changement de serrures. Devis gratuit !">
-    <meta name="keywords" content="serrurier, dépannage serrurerie, ouverture de porte, changement de serrure, blindage de porte, urgence serrurier, Île-de-France">
-    <meta name="author" content="ADFIT Services">
-    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,7 +17,6 @@
             color: white;
             text-align: center;
             padding: 20px;
-            position: relative;
         }
         .container {
             width: 90%;
@@ -33,13 +28,17 @@
             border-radius: 10px;
         }
         .button {
-            display: inline-block;
+            display: block;
+            width: 100%;
+            text-align: center;
             background: #007bff;
             color: white;
-            padding: 12px 25px;
-            text-decoration: none;
+            padding: 15px;
+            font-size: 18px;
             font-weight: bold;
             border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
             transition: background 0.3s;
         }
         .button:hover {
@@ -50,16 +49,12 @@
             padding: 0;
         }
         ul li {
-            background: url('https://img.icons8.com/ios-glyphs/30/007bff/checkmark.png') no-repeat left center;
             padding-left: 40px;
             margin: 10px 0;
             font-size: 18px;
         }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
         input, textarea {
+            width: 100%;
             margin: 8px 0;
             padding: 12px;
             font-size: 16px;
@@ -67,6 +62,7 @@
             border-radius: 5px;
         }
         button {
+            width: 100%;
             background: #007bff;
             color: white;
             border: none;
@@ -87,8 +83,9 @@
         }
         footer a {
             color: #f4f4f4;
+            font-weight: bold;
+            text-decoration: underline;
         }
-        /* Bouton WhatsApp flottant */
         .whatsapp {
             position: fixed;
             bottom: 20px;
@@ -107,39 +104,15 @@
             width: 30px;
             margin-right: 8px;
         }
-        /* Bouton Appel Direct */
-        .call-button {
-            display: block;
-            width: 80%;
-            max-width: 300px;
-            margin: 20px auto;
-            text-align: center;
-            background: #28a745;
-            color: white;
-            padding: 15px;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 10px;
-            text-decoration: none;
-        }
-        .call-button:hover {
-            background: #1e7e34;
-        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>ADFIT Services - Serrurier 24/7</h1>
         <p>Intervention en Île-de-France en moins de 30 minutes</p>
+        <a href="tel:0652317539" class="button">📞 Appeler : 06 52 31 75 39</a>
     </header>
-
-    <!-- Bouton Appel Direct -->
-    <a href="tel:0652317539" class="call-button">📞 Appeler maintenant</a>
-
-    <!-- Bouton Pages Jaunes (plus visible) -->
-    <a href="https://www.pagesjaunes.fr/pros/63772553" target="_blank" class="button" style="display: block; width: 80%; max-width: 300px; margin: 20px auto; text-align: center; background: #ffcc00; color: #000; padding: 15px; font-size: 18px; font-weight: bold; border-radius: 10px; text-decoration: none;">
-        ⭐ Voir nos avis Pages Jaunes
-    </a>
     
     <div class="container">
         <h2>Nos Services</h2>
@@ -155,31 +128,46 @@
     </div>
     
     <div class="container">
-        <h2>Ce que disent nos clients</h2>
-        <p>"Serrurier rapide et efficace, il est arrivé en 20 minutes !"</p>
-        <p>"Tarif très abordable et travail propre, je recommande."</p>
-        <p>"Service au top, intervention rapide et prix correct !"</p>
-    </div>
-    
-    <div class="container">
         <h2>Contact & Demande de Devis</h2>
         <p>Remplissez ce formulaire pour nous contacter ou demander un devis gratuit.</p>
-        <form action="https://formspree.io/f/ton_identifiant" method="POST">
-            <input type="text" name="nom" placeholder="Votre nom" required>
-            <input type="email" name="email" placeholder="Votre email" required>
-            <input type="tel" name="telephone" placeholder="Votre téléphone" required>
-            <textarea name="message" placeholder="Décrivez votre besoin" required></textarea>
+        <form onsubmit="sendEmail(); return false;">
+            <input type="text" id="nom" placeholder="Votre nom" required>
+            <input type="email" id="email" placeholder="Votre email" required>
+            <input type="tel" id="telephone" placeholder="Votre téléphone" required>
+            <textarea id="message" placeholder="Décrivez votre besoin" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
     </div>
-    
+
+    <div class="container" style="text-align: center;">
+        <h2>📢 Retrouvez-nous sur Pages Jaunes</h2>
+        <p><a href="https://www.pagesjaunes.fr/pros/63772553" target="_blank" style="font-size: 18px; color: #007bff; font-weight: bold;">Cliquez ici pour voir nos avis et services</a></p>
+    </div>
+
     <footer>
         <p>📞 <a href="tel:0652317539">06.52.31.75.39</a> | ✉️ <a href="mailto:adfitservices@gmail.com">adfitservices@gmail.com</a></p>
     </footer>
 
-    <!-- Bouton WhatsApp -->
     <a href="https://wa.me/33652317539" class="whatsapp" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp"> WhatsApp
     </a>
+
+    <script>
+        function sendEmail() {
+            let nom = document.getElementById("nom").value;
+            let email = document.getElementById("email").value;
+            let telephone = document.getElementById("telephone").value;
+            let message = document.getElementById("message").value;
+
+            let mailtoLink = `mailto:adfitservices@gmail.com?subject=Demande de devis&body=
+                Nom: ${nom}%0D%0A
+                Email: ${email}%0D%0A
+                Téléphone: ${telephone}%0D%0A
+                Message: ${message}`;
+
+            window.location.href = mailtoLink;
+        }
+    </script>
+
 </body>
 </html>
